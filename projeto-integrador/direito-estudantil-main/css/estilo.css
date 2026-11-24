@@ -1,0 +1,217 @@
+:root {
+    --escuro-verde: #2F3201;
+    --meio-verde: #C9D10A;
+    --claro-verde: #F4F5C1;
+    --mais-claro-verde: #FCFCF2;
+    --verde-amarelado: #EAEE58;
+}
+
+h1 {
+    text-align: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+h1:hover {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    text-align: center;
+}
+/* cabecalho*/
+header {
+    background-color: rgb(47, 128, 47);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+
+}
+
+.logo {
+    max-width: 200px;
+    margin-top: -60px;
+    margin-right: 350px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* agrupa título e menu ao lado direito da logo */
+.titulo-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* menu de navegação horizontal no cabeçalho */
+header nav.menu-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 0;
+}
+
+header nav.menu-header a.botao {
+    margin: 0 10px;
+}
+
+body {
+    background-color: rgb(7, 40, 27);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 10px;
+    text-align: left;
+}
+
+nav {
+    background-color: rgb(117, 197, 140);
+    width: 80%;
+    max-width: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+/*corpo*/
+main{
+    background-color: rgb(58, 148, 83);
+    width: 80%;
+    max-width: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+}
+section {
+
+    background-color: var(--claro-verde);
+    padding: 22px 26px;
+    border-left: 5px solid var(--meio-verde);
+    border-right: 5px solid var(--meio-verde);
+    font-style: italic;
+    color: var(--cor-escura);
+    margin: 28px 0;
+    border-radius: 4px;
+    text-align: left;
+}
+
+p {
+
+    line-height: 20px;
+}
+
+article {
+    background-color: var(--mais-claro-verde);
+
+
+    padding: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    line-height: 1;
+    padding: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 0px;
+    background-color: rgb(7, 40, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*links*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+/* animação de hover: botões do menu ficam maiores */
+header nav.menu-header a.botao:hover {
+    transform: scale(1.15);
+}
+
+/* animação de hover: botão 'ver mais sobre' e outros botões fora do menu */
+.botao:hover {
+    transform: scale(1.15);
+}
+
+/* cor do botão 'ver mais sobre' */
+#btn-ver-mais {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-ver-mais:hover {
+    background-color: var(--verde-amarelado);
+    color: black;
+    transform: scale(1.15);
+}
+
+  .conteudo-extra {
+       display: none;
+       margin-top: 20px;
+       padding: 20px;
+       background-color: #4CAF50;
+       border-radius: 8px;
+   }
+
+   .conteudo-extra.mostrar {
+       display: block;
+   }
+
+/* Imagens de alimentos distribuídas na página alimentação */
+.imagem-alimentos {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}

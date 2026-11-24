@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Direitos Estudantil</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="imagem/Sem título.png" alt="logo" class="logo">
+        <div class="titulo-menu">
+            <h1><a href="index.html">Direitos Estudantil</a></h1>
+            <nav class="menu-header">
+                <a href="index.html" class="botao">inicio</a>
+                <a href="psicologia.html" class="botao">psicologia</a>
+                <a href="faltas.html" class="botao">faltas</a>
+                <a href="alimentacao.html" class="botao">alimentação</a>
+                <a href="inclusao.html" class="botao">inclusão</a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+    <article class="pagina-inicial">
+        <main>
+            <h2>Conheça seus direitos. Transforme sua escola.</h2>
+            <p>Este site foi criado com o objetivo de informar e conscientizar os estudantes sobre seus direitos e
+                deveres no
+                ambiente escolar. Aqui, você encontrará informações sobre temas importantes, como respeito,
+                igualdade,
+                segurança, liberdade de expressão e inclusão nas escolas. <br></p>
+
+            <section>
+                <p>Nosso propósito é tornar essas informações mais acessíveis e fáceis de compreender, ajudando os
+                    alunos a
+                    conhecerem seus direitos, entenderem suas responsabilidades e saberem onde buscar orientação
+                    quando
+                    necessário.
+                    <br>
+                </p>
+            </section>
+
+            <p>Acreditamos que conhecer os próprios direitos é um passo importante para construir um ambiente
+                escolar
+                mais
+                justo, seguro, respeitoso e acolhedor para todos.</p>
+
+            <button class="botao" id="btn-ver-mais">ver mais sobre.</button>
+            <div id="conteudo-psicologia" class="conteudo-extra">
+                <h3>Psicologia Escolar</h3>
+                <p>É garantido por lei federal, que determina a atuação de equipes multiprofissionais com psicólogos e
+                    assistentes sociais na rede básica de ensino. <br></p>
+                <section>
+                    <p>Lei nº 13.935/2019: Assegura a prestação de serviços de Psicologia e Serviço Social nas redes
+                        públicas de educação básica (ensinos fundamental e médio). O objetivo é melhorar o processo de
+                        aprendizagem e fortalecer as relações na comunidade escolar. <br></p>
+                    <p>Lei nº 14.819/2024: Institui a Política Nacional de Atenção Psicossocial nas Comunidades Escolares,
+                        integrando as áreas de educação, saúde e assistência social para promover o cuidado de alunos,
+                        professores e funcionários. <br></p>
+                </section>
+                <p>Parceria com o SUS: Quando necessário um atendimento clínico especializado, os estudantes devem ser
+                    encaminhados e atendidos em articulação com a rede pública de saúde. Equipes Multiproissionais: Os
+                    profissionais devem atuar de forma integrada com a comunidade escolar para mediação de conflitos,
+                    prevenção de violências e apoio emocional.<br></p>
+                <p>Desafios de Implementação: Apesar de obrigatória, a efetivação completa da lei ainda enfrenta lentidão e
+                    varia conforme o município ou estado, motivando constantes cobranças de órgãos como o Conselho Federal
+                    de Psicologia..</p>
+            </div>
+        </main>
+    </article>
+
+    <footer>
+        <p>@direitosestudantil 2026</p>
+    </footer>
+    <script>
+        const btn = document.getElementById('btn-ver-mais');
+        const conteudo = document.getElementById('conteudo-psicologia');
+
+        btn.addEventListener('click', () => {
+            conteudo.classList.toggle('mostrar');
+            if (conteudo.classList.contains('mostrar')) {
+                btn.textContent = 'ver menos.';
+            } else {
+                btn.textContent = 'ver mais sobre.';
+            }
+        });
+    </script>
+</body>
+
+</html>
